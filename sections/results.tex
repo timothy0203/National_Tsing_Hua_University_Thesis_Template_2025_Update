@@ -1,0 +1,25 @@
+% This is Results.
+
+
+% Compact reward design table with highlighting for BCQ on train
+\begin{table}[htbp]
+\centering
+\caption{Reward Design Comparison Across All Severity Categories for Training Set (BCQ).}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccc|ccc|ccc|ccc|ccc}
+\toprule
+\textbf{Metric} & \multicolumn{3}{c}{\texttt{default}} & \multicolumn{3}{c}{\texttt{NoActPen}} & \multicolumn{3}{c}{\texttt{NoIntermRew}} & \multicolumn{3}{c}{\texttt{HighExtubRew}} & \multicolumn{3}{c}{\texttt{NoExtubRew}} \\
+ & High & Med & Low & High & Med & Low & High & Med & Low & High & Med & Low & High & Med & Low \\
+\midrule
+Total Cumulative Reward & 6.64 & 8.55 & \textbf{9.44} & 6.59 & \textbf{8.67} & 9.15 & 6.68 & 8.61 & 9.06 & \textbf{7.01} & 8.42 & 9.27 & 6.99 & 8.48 & 9.24 \\
+Extubation Meet Rate (\%) & 94.0 & \textbf{100.0} & \textbf{100.0} & 93.0 & \textbf{100.0} & \textbf{100.0} & 92.0 & \textbf{100.0} & \textbf{100.0} & \textbf{95.0} & \textbf{100.0} & \textbf{100.0} & \textbf{95.0} & 99.0 & \textbf{100.0} \\
+Avg. Trajectory Length (hrs) & 16.72 & 14.5 & \textbf{12.39} & 16.11 & \textbf{14.27} & 12.79 & 15.58 & 15.52 & 13.6 & \textbf{15.41} & 16.43 & 13.51 & 19.8 & 16.5 & 13.23 \\
+Avg. Time to Meet (hrs) & 17.53 & 14.5 & \textbf{12.39} & 17.0 & \textbf{14.27} & 12.79 & 16.57 & 15.52 & 13.6 & \textbf{15.99} & 16.43 & 13.51 & 20.63 & 16.63 & 13.23 \\
+Action Diversity & 16 & 9 & 13 & 14 & 10 & 13 & 15 & \textbf{14} & \textbf{17} & 17 & 10 & 14 & \textbf{30} & \textbf{14} & 14 \\
+Anomalous Actions (\%) & 6.0 & \textbf{0.0} & \textbf{0.0} & 7.0 & \textbf{0.0} & \textbf{0.0} & 8.0 & \textbf{0.0} & \textbf{0.0} & \textbf{5.0} & \textbf{0.0} & \textbf{0.0} & \textbf{5.0} & 1.0 & \textbf{0.0} \\
+\bottomrule
+\end{tabular}
+}%
+\label{tab:reward_design_comparison_highlighted_DiscreteBCQ_train}
+\end{table}
